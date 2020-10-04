@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".MainActivity">
+
+  <Button
+    android:id="@+id/button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="50dp"
+    android:text="Button"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <Button
+    android:id="@+id/btngcf"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="3dp"
+    android:layout_marginBottom="84dp"
+    android:text="gcf"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="@+id/txt2"
+    app:layout_constraintTop_toBottomOf="@+id/txt2" />
+
+  <EditText
+    android:id="@+id/txt2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="3dp"
+    android:layout_marginBottom="17dp"
+    android:ems="10"
+    android:inputType="number"
+    app:layout_constraintBottom_toTopOf="@+id/btngcf"
+    app:layout_constraintStart_toStartOf="@+id/txt1"
+    app:layout_constraintTop_toBottomOf="@+id/txt1"
+    android:autofillHints="" />
+
+  <EditText
+    android:id="@+id/txt1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="34dp"
+    android:layout_marginBottom="13dp"
+    android:ems="10"
+    android:inputType="number"
+    app:layout_constraintBottom_toTopOf="@+id/txt2"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+  <View
+    android:id="@+id/divider"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:layout_marginStart="1dp"
+    android:layout_marginTop="459dp"
+    android:layout_marginEnd="1dp"
+    android:layout_marginBottom="19dp"
+    android:background="?android:attr/listDivider"
+    app:layout_constraintBottom_toTopOf="@+id/txt1"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <Button
+    android:id="@+id/btnnestedcall"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Nested Call"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.551"
+    tools:layout_editor_absoluteX="37dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
